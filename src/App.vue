@@ -1,23 +1,28 @@
+<script setup>
+// Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
+
+</script>
+
 <template>
-  <div id="app">
-  <h1>To-Do List</h1>
-  <to-do-form @todo-added="addToDo"></to-do-form>
-  <h2 id="list-summary" ref="listSummary" tabindex="-1">{{listSummary}}</h2>
-  <ul aria-labelledby="list-summary" class="stack-large">
-    <li v-for="item in ToDoItems" :key="item.id">
-    <to-do-item :label="item.label" :done="item.done" :id="item.id"
-                @checkbox-changed="updateDoneStatus(item.id)"
-                @item-deleted="deleteToDo(item.id)"
-                @item-edited="editToDo(item.id, $event)">
-    </to-do-item>
-    </li>
-  </ul>
+  <div id="todo-list">
+    <h1>To-Do List</h1>
+    <to-do-form @todo-added="addToDo"></to-do-form>
+    <h2 id="list-summary" ref="listSummary" tabindex="-1">{{listSummary}}</h2>
+    <ul aria-labelledby="list-summary" class="stack-large">
+      <li v-for="item in ToDoItems" :key="item.id">
+      <to-do-item :label="item.label" :done="item.done" :id="item.id"
+                  @checkbox-changed="updateDoneStatus(item.id)"
+                  @item-deleted="deleteToDo(item.id)"
+                  @item-edited="editToDo(item.id, $event)">
+      </to-do-item>
+      </li>
+    </ul>
   </div>
 </template>
 
 <script>
 import ToDoItem from './components/ToDoItem.vue';
-import ToDoForm from './components/ToDoForm';
+import ToDoForm from './components/ToDoForm.vue';
 import uniqueId from 'lodash.uniqueid'
 
 export default {
@@ -30,9 +35,9 @@ export default {
     return {
       ToDoItems: [
         { id: uniqueId('todo-'), label: 'Learn Vue', done: false },
-        { id: uniqueId('todo-'), label: 'Create a Vue project with the CLI', done: true },
-        { id: uniqueId('todo-'), label: 'Have fun', done: true },
-        { id: uniqueId('todo-'), label: 'Create a to-do list', done: false }
+        { id: uniqueId('todo-'), label: 'Create a Vue 3 project with Vite', done: true },
+        { id: uniqueId('todo-'), label: 'Take a long walk outdoors', done: true },
+        { id: uniqueId('todo-'), label: 'Learn about ocean acidification effects', done: false }
       ]
     };
   },
