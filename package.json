@@ -12,7 +12,6 @@
   "type": "module",
   "dependencies": {
     "lodash.uniqueid": "^4.0.1",
-    "chromedriver": "^95.0.0",
     "vue": "^3.2.16"
   },
   "repository": {
@@ -23,10 +22,13 @@
     "@vitejs/plugin-vue": "^1.9.3",
     "@vue/test-utils": "^2.0.0-rc.16",
     "browserstack-local": "^1.4.8",
+    "chromedriver": "^95.0.0",
     "vite": "^2.6.4",
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
-    "vue-template-compiler": "^2.6.11"
+    "vue-template-compiler": "^2.6.11",
+    "nightwatch": "^2.0.0-experimental.1",
+    "vite-plugin-nightwatch": "^0.1.0-preview"
   }
 }
