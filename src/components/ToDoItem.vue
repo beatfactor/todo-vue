@@ -57,7 +57,6 @@ export default {
       this.$emit("item-deleted");
     },
     toggleToItemEditForm() {
-      console.log(this.$refs.editButton);
       this.isEditing = true;
     },
     itemEdited(newLabel) {

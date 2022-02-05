@@ -1,5 +1,4 @@
 // Refer to the online docs for more details: https://nightwatchjs.org/gettingstarted/configuration/
-const Services = {}; loadServices();
 
 //  _   _  _         _      _                     _          _
 // | \ | |(_)       | |    | |                   | |        | |
@@ -31,14 +30,25 @@ module.exports = {
         on_failure: true
       },
 
-      desiredCapabilities: {
-        browserName : 'firefox'
-      },
-
       webdriver: {
         start_process: true,
         log_path: false,
         server_path: ''
+      },
+
+      desiredCapabilities : {
+        browserName : 'chrome',
+        'goog:chromeOptions' : {
+          // More info on Chromedriver: https://sites.google.com/a/chromium.org/chromedriver/
+          w3c: true,
+          args: [
+            //'--auto-open-devtools-for-tabs',
+            //'--no-sandbox',
+            //'--ignore-certificate-errors',
+            //'--allow-insecure-localhost',
+            //'--headless'
+          ]
+        }
       }
     },
 
@@ -79,30 +89,7 @@ module.exports = {
     },
 
     chrome: {
-      desiredCapabilities : {
-        browserName : 'chrome',
-        'goog:chromeOptions' : {
-          // More info on Chromedriver: https://sites.google.com/a/chromium.org/chromedriver/
-          //
-          // w3c:false tells Chromedriver to run using the legacy JSONWire protocol (not required in Chrome 78)
-          w3c: true,
-          args: [
-            '--auto-open-devtools-for-tabs',
-            //'--no-sandbox',
-            //'--ignore-certificate-errors',
-            //'--allow-insecure-localhost',
-            //'--headless'
-          ]
-        }
-      },
 
-      webdriver: {
-        start_process: true,
-        server_path: '',
-        cli_args: [
-          // --verbose
-        ]
-      }
     },
 
     edge: {
@@ -229,13 +216,3 @@ module.exports = {
     }
   }
 };
-
-function loadServices() {
-  try {
-    Services.chromedriver = require('chromedriver');
-  } catch (err) {}
-
-  try {
-    Services.geckodriver = require('geckodriver');
-  } catch (err) {}
-}

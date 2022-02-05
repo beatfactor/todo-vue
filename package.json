@@ -5,30 +5,25 @@
     "dev": "vite --host",
     "build": "vite build",
     "serve": "vite preview",
-    "lint": "eslint src --fix",
     "test-components": "nightwatch test/component/ --env chrome",
     "test-e2e": "nightwatch test/e2e/ --env chrome"
   },
   "type": "module",
   "dependencies": {
     "lodash.uniqueid": "^4.0.1",
-    "vue": "^3.2.16"
+    "vue": "^3.2.29"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/beatfactor/middlemarch.git"
+    "url": "git+https://github.com/nightwatchjs-community/todo-vue.git"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^1.9.3",
-    "@vue/test-utils": "^2.0.0-rc.16",
-    "browserstack-local": "^1.4.8",
-    "chromedriver": "^95.0.0",
-    "vite": "^2.6.4",
-    "babel-eslint": "^10.1.0",
-    "eslint": "^6.7.2",
+    "@vitejs/plugin-vue": "^2.1.0",
+    "@vue/test-utils": "^2.0.0-rc.18",
+    "chromedriver": "^97.0.4",
     "eslint-plugin-vue": "^6.2.2",
-    "vue-template-compiler": "^2.6.11",
-    "nightwatch": "^2.0.0-experimental.1",
-    "vite-plugin-nightwatch": "^0.1.0-preview"
+    "nightwatch": "^2.0.5",
+    "vite": "^2.7.13",
+    "vite-plugin-nightwatch": "^0.2.5"
   }
 }

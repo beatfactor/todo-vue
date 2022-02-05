@@ -6,7 +6,7 @@ describe('Component test for the TodoForm', function() {
     const component = await browser.mountVueComponent('/src/components/ToDoForm.vue');
     browser.assert.ok(component, 'Component is rendered');
 
-    const labelEl = await component.findElement('label[for="new-todo-input"]');
+    const labelEl = await component.find('label[for="new-todo-input"]');
     expect(labelEl).text.toContain('What needs to be done?');
 
   });
