@@ -24,6 +24,6 @@
     "eslint-plugin-vue": "^6.2.2",
     "nightwatch": "^2.0.5",
     "vite": "^2.7.13",
-    "vite-plugin-nightwatch": "^0.2.5"
+    "vite-plugin-nightwatch": "^0.2.6"
   }
 }

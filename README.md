@@ -3,6 +3,8 @@ Sample todo app built with the Vue3 and Vite. For the accompanying documentation
 
 [Understanding client-side JavaScript frameworks : Vue tutorials](https://wiki.developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks#Vue_tutorials).
 
+[![Nightwatch Tests](https://github.com/nightwatchjs-community/todo-vue/actions/workflows/node.js.yml/badge.svg?branch=main)](https://github.com/nightwatchjs-community/todo-vue/actions/workflows/node.js.yml)
+
 This project uses [ES Modules](https://nodejs.org/api/esm.html). Node 12+ required. For the live version, see https://mdn.github.io/todo-vue/dist/.
 
 ## Project setup
