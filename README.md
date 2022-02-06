@@ -1,7 +1,6 @@
 # todo-vue
 Sample todo app built with the Vue3+Vite. For the accompanying documentation, see MDN article
-[Understanding client-side JavaScript frameworks
-: Vue tutorials](https://wiki.developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks#Vue_tutorials).
+[Understanding client-side JavaScript frameworks : Vue tutorials](https://wiki.developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks#Vue_tutorials).
 
 This project uses [ES Modules](https://nodejs.org/api/esm.html). Node 12+ required. For the live version, see https://mdn.github.io/todo-vue/dist/.
 
@@ -29,7 +28,7 @@ npm run lint
 See [Configuration Reference](https://vitejs.dev/config/).
 
 ## Run tests
-Tests are written using [Nightwatch 2](https://v2.nightwatchjs.org/) and cover both component testing and end-to-end testing. 
+Tests are written using [Nightwatch 2](https://nightwatchjs.org/) and cover both component testing and end-to-end testing. 
 
 For component testing, the new [vite-plugin-nightwatch](https://www.npmjs.com/package/vite-plugin-nightwatch) plugin is used, which is still in preview mode.
 

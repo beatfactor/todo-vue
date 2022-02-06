@@ -5,8 +5,8 @@
     "dev": "vite --host",
     "build": "vite build",
     "serve": "vite preview",
-    "test-components": "nightwatch test/component/ --env chrome",
-    "test-e2e": "nightwatch test/e2e/ --env chrome"
+    "test": "nightwatch test/component/",
+    "test-e2e": "nightwatch test/e2e/"
   },
   "type": "module",
   "dependencies": {
