@@ -43,12 +43,12 @@ npm run dev
 This will run a sample component test for the `ToDoForm.vue` component in Chrome:
 
 ```
-npm run test-components
+npm test
 ```
 
 To run it in headless mode:
 ```
-npm run test-components -- --headless
+npm test -- --headless
 ```
 
 ### Run end-to-end tests
