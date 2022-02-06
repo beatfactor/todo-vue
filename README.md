@@ -1,7 +1,6 @@
-# todo-vue
-Sample todo app built with the Vue3+Vite. For the accompanying documentation, see MDN article
-[Understanding client-side JavaScript frameworks
-: Vue tutorials](https://wiki.developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks#Vue_tutorials).
+# todo-vue-vite
+Sample todo app built with the Vue3 and Vite. For the accompanying documentation, see MDN article
+[Understanding client-side JavaScript frameworks : Vue tutorials](https://wiki.developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks#Vue_tutorials).
 
 This project uses [ES Modules](https://nodejs.org/api/esm.html). Node 12+ required. For the live version, see https://mdn.github.io/todo-vue/dist/.
 
