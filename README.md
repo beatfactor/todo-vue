@@ -1,4 +1,4 @@
-# todo-vue-vite
+# todo-vue
 Sample todo app built with the Vue 3 and Vite. More details on component testing in Nightwatch using Vite available on the [Component testing](https://nightwatchjs.org/guide/component-testing/introduction.html) guide page on Nightwatch docs.
 
 [![Nightwatch Tests](https://github.com/nightwatchjs-community/todo-vue/actions/workflows/node.js.yml/badge.svg?branch=main)](https://github.com/nightwatchjs-community/todo-vue/actions/workflows/node.js.yml)
