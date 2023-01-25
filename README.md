@@ -1,12 +1,12 @@
 # todo-vue-vite
-Sample todo app built with the Vue3 and Vite. For the accompanying documentation, see MDN article
-
-[Understanding client-side JavaScript frameworks : Vue tutorials](https://wiki.developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks#Vue_tutorials).
+Sample todo app built with the Vue 3 and Vite. More details on component testing in Nightwatch using Vite available on the [Component testing](https://nightwatchjs.org/guide/component-testing/introduction.html) guide page on Nightwatch docs.
 
 [![Nightwatch Tests](https://github.com/nightwatchjs-community/todo-vue/actions/workflows/node.js.yml/badge.svg?branch=main)](https://github.com/nightwatchjs-community/todo-vue/actions/workflows/node.js.yml)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/1aa38269-6c09-44a5-86c9-8c1527efd2d0/deploy-status)](https://app.netlify.com/sites/todo-vue3-vite/deploys)
 
-This project uses [ES Modules](https://nodejs.org/api/esm.html). Node 12+ required. For the live version, see https://mdn.github.io/todo-vue/dist/.
+Live preview: https://todo-vue3-vite.netlify.app/
+
+This project uses [ES Modules](https://nodejs.org/api/esm.html). Node 12+ required.
 
 ## Project setup
 ```
@@ -29,9 +29,7 @@ See [Configuration Reference](https://vitejs.dev/config/).
 ## Run tests
 Tests are written using [Nightwatch 2](https://nightwatchjs.org/) and cover both component testing and end-to-end testing. 
 
-For component testing, the new [vite-plugin-nightwatch](https://www.npmjs.com/package/vite-plugin-nightwatch) plugin is used, which is still in preview mode.
-
-Before running the tests, make sure the `Vite` dev server is running and that the localhost url matches that which is set in the `.env` file. By default it is set to `http://localhost:3000`.
+For component testing, the [@nightwatch/vue](https://github.com/nightwatchjs/nightwatch-plugin-vue) plugin is used, which can start/stop the Vite server automatically. 
 
 Start the Vite dev server:
 ```
