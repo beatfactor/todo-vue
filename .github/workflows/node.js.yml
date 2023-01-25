@@ -19,7 +19,8 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - run: npm ci
-      - name: Start vite dev server
-        run: npm run dev &
-      - name: Run Nightwatch tests
-        run: VITE_BASE_URL=http://localhost:3000 npm test -- --headless
+      - name: Run component tests
+        run: VITE_BASE_URL=http://localhost:5173 npm test -- --headless
+
+      - name: Run end-to-end tests
+        run: VITE_BASE_URL=http://localhost:5173 npm run test-e2e -- --headless

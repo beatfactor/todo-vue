@@ -1,5 +1,5 @@
 {
-  "name": "moz-todo-vue",
+  "name": "todo-app-vue-example",
   "version": "0.1.0",
   "scripts": {
     "dev": "vite --host",
@@ -11,19 +11,20 @@
   "type": "module",
   "dependencies": {
     "lodash.uniqueid": "^4.0.1",
-    "vue": "^3.2.29"
+    "vue": "^3.2.45"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nightwatchjs-community/todo-vue.git"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^2.1.0",
-    "@vue/test-utils": "^2.0.0-rc.18",
-    "chromedriver": "^97.0.4",
-    "eslint-plugin-vue": "^6.2.2",
-    "nightwatch": "^2.0.7",
-    "vite": "^2.8.0",
-    "vite-plugin-nightwatch": "^0.2.12"
+    "@nightwatch/vue": "^0.4.1",
+    "@types/nightwatch": "^2.3.18",
+    "@vitejs/plugin-vue": "^4.0.0",
+    "@vue/test-utils": "^2.2.7",
+    "chromedriver": "109.0.0",
+    "eslint-plugin-vue": "9.9.0",
+    "nightwatch": "2.6.10",
+    "vite": "^4.0.4"
   }
 }
