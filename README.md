@@ -43,11 +43,6 @@ This will run a sample component test for the `ToDoForm.vue` component in Chrome
 npm test
 ```
 
-To run it in headless mode:
-```
-npm test -- --headless
-```
-
 ### Run end-to-end tests
 This will run the end-to-end tests in Chrome:
 
@@ -55,7 +50,10 @@ This will run the end-to-end tests in Chrome:
 npm run test-e2e
 ```
 
-To run it in headless mode:
+### Headless mode
+
+To run the tests in headless mode (for example to run them in Github Actions), add the `-- --headless` argument to the `npm` task:
+
 ```
 npm run test-e2e -- --headless
 ```
