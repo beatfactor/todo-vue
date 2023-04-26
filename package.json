@@ -22,7 +22,7 @@
     "@types/nightwatch": "^2.3.18",
     "@vitejs/plugin-vue": "^4.0.0",
     "@vue/test-utils": "^2.2.7",
-    "chromedriver": "109.0.0",
+    "chromedriver": "112.0.0",
     "eslint-plugin-vue": "9.9.0",
     "nightwatch": "2.6.10",
     "vite": "^4.0.4"
